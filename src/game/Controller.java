@@ -5,14 +5,14 @@ import javax.swing.*;
 
 public class Controller extends JFrame implements KeyListener{
 	
-	public static Model logic = new Model();
+	public static logic = new GameWorld(0, 100, 0, 100);
 	public static View screen = new View();
 	
 	
 	public Controller() {
 		
 		
-		this.setTitle("Controller");
+		this.setTitle("Estuaries and Education");
 		this.setSize(new Dimension(1200,1200));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
@@ -65,7 +65,12 @@ public class Controller extends JFrame implements KeyListener{
 	public void keyTyped(KeyEvent e) {
 	}
 
+	public void tick(){
+		//updatePlayerPosition
+		// 
 	
+	}
+
 	public static void main(String[] args) {
 		
 		
@@ -77,4 +82,5 @@ public class Controller extends JFrame implements KeyListener{
 
 		
 	}
+
 }
