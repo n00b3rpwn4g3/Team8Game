@@ -20,8 +20,6 @@ public class InGameObject {
 	GameWorld gameworld;
 	
 	
-	// methods:
-	
 	// custom constructor adds this new object to the GameWorld's Collection of other physics objects
 	public InGameObject(GameWorld gameworld, float x, float y, float vx, float vy){
 		this.gameworld=gameworld;
@@ -41,6 +39,8 @@ public class InGameObject {
 		}
 	}
 	
+	// methods: 	
+
 	public void move() {
 		// update the object's position and velocity
 		x = x + vx;
